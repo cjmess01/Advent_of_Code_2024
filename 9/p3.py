@@ -44,6 +44,7 @@ print(raw)
 # print(back)
 for i in range(id-1, -1, -1):
     # print(f"On id - {i}")
+    print(f"on {i}")
     required_length = id_len_and_loc[i][0]
     current_location = id_len_and_loc[i][1]
     max_space = max(space_len_and_loc.keys())
@@ -66,6 +67,7 @@ for i in range(id-1, -1, -1):
     space_len_and_loc[str(len_of_earliest_match_index - int(required_length))].append(earliest_match_index + int(required_length)) 
     space_len_and_loc[str(len_of_earliest_match_index - int(required_length))].sort()
 
+    print(space_len_and_loc)
 
     # print(f"New whole created of length {len_of_earliest_match_index - int(required_length)} at index {earliest_match_index + int(required_length)}")
     # print(space_len_and_loc)
